@@ -8,20 +8,17 @@ import com.nsd.environmentData.EnvironmentDataManager;
 import com.nsd.utils.PropertiesUtils;
 
 public final class DriverSetup {
-	
+
 	private DriverSetup() {
-		
+
 	}
-	
+
 	public static void setup() {
-		if(EnvironmentDataManager.get(EnvironmentData.BROWSER) != null) {
+		if(EnvironmentDataManager.get(EnvironmentData.BROWSER) != null)
 			DriverType.valueOf(EnvironmentDataManager.get(EnvironmentData.BROWSER).toUpperCase()).setDriverType();
-		}
-		else {
-		String executeOn = PropertiesUtils.getPropValue(FrameworkConstants.CONFIG_FILE_PATH, ConfigConstants.EXECUTE_ON).
-				toUpperCase();
-		DriverType.valueOf(executeOn).setDriverType();
-		}
+		else
+			DriverType.valueOf(PropertiesUtils.getPropValue(FrameworkConstants.CONFIG_FILE_PATH, ConfigConstants.EXECUTE_ON).
+					toUpperCase()).setDriverType();
 	}
 
 }

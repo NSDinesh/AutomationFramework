@@ -4,7 +4,11 @@ import org.testng.Assert;
 
 import com.nsd.reporting.ExtentLogger;
 
-public class ReportLogger {
+public final class ReportLogger {
+	
+	private ReportLogger() {
+		
+	}
 	
 	
 	public static void verifyTrue(boolean condition, String message, boolean assertFail) {

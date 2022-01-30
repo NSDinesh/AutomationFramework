@@ -3,7 +3,7 @@ package com.nsd.reporting;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.nsd.utils.ScreenshotUtils;
 
-public class ExtentLogger {
+public final class ExtentLogger {
 	
 	private ExtentLogger(){}
 

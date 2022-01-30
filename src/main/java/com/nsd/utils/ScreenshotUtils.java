@@ -5,7 +5,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.nsd.driversetup.DriverManager;
 
-public class ScreenshotUtils {
+public final class ScreenshotUtils {
 	
 	private ScreenshotUtils() {
 		

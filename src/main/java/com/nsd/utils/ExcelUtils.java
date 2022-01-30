@@ -12,7 +12,11 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelUtils {
+public final class ExcelUtils {
+	
+	private ExcelUtils() {
+		
+	}
 
 	private static Workbook getWorkbook(String fileName) {
 		Workbook workbook;

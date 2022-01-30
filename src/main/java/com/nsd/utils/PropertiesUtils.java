@@ -6,7 +6,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class PropertiesUtils {
+public final class PropertiesUtils {
+	
+	private PropertiesUtils() {
+		
+	}
 	
 	public static Properties loadProperties(InputStream fileStream) {
 		Properties properties = new Properties();

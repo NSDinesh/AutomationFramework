@@ -2,7 +2,7 @@ package com.nsd.driversetup;
 
 import org.openqa.selenium.WebDriver;
 
-public class DriverManager {
+public final class DriverManager {
 	
 	private DriverManager() {
 		

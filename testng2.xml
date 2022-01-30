@@ -12,8 +12,8 @@
 		</classes>
 	</test>
 	<test name="report" parallel="methods">
-		<parameter name="report" value="firefox"/>
-		<parameter name="browser" value="firefox" />
+		<parameter name="report" value="edge"/>
+		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="com.nsd.tests.amazonTestCases.SearchProduct" />
 			

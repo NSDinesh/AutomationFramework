@@ -3,7 +3,11 @@ package com.nsd.environmentData;
 import java.util.HashMap;
 import java.util.Map;
 
-public class EnvironmentDataManager {
+public final class EnvironmentDataManager {
+	
+	private EnvironmentDataManager() {
+		
+	}
 	
 	private static ThreadLocal<Map<EnvironmentData, String>> map = InheritableThreadLocal.withInitial(HashMap::new);
 

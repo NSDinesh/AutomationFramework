@@ -4,7 +4,11 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class ExtentReport {
+public final class ExtentReport {
+	
+	private ExtentReport() {
+		
+	}
 	
 	public static void initReports(String report) {
 		ExtentReports extentReport = new ExtentReports();
@@ -21,5 +25,13 @@ public class ExtentReport {
 		ExtentTest extentTest = ExtentReportManager.getExtentReports().createTest(testCaseName);
 		ExtentTestManager.setExtentTest(extentTest);
 	}
+	
+	public static void assignAuthors(String[] authors) {
+		for(String author : authors) {
+			ExtentTestManager.getExtentTest().assignAuthor(author);
+		}
+	}
+	
+	
 
 }

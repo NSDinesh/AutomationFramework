@@ -3,7 +3,7 @@ package com.nsd.utils;
 import java.io.File;
 import java.io.FilenameFilter;
 
-public class FileUtils {
+public final class FileUtils {
 	
 	private FileUtils() {
 		

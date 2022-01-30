@@ -2,6 +2,7 @@ package com.nsd.driversetup.driverimpl.webdriverimpl;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import com.nsd.driversetup.DriverManager;
 
@@ -13,7 +14,7 @@ WebDriver driver;
 	
 	public void driverSetup() {
 		WebDriverManager.edgedriver().setup();
-		driver = new ChromeDriver();
+		driver = new EdgeDriver();
 		DriverManager.setDriver(driver);
 	}
 

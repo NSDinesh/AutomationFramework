@@ -119,6 +119,9 @@ public class dummy {
 		extentTest.assignDevice("samsung");
 		extentTest = extentReports.createTest("Third Test", "This test is third created");
 		extentTest.log(Status.PASS, "Test3 passed");
+		extentTest = extentReports.createTest("fourth Test", "This test is fourth created");
+		extentTest.assignDevice("oneplus");
+		extentTest.log(Status.PASS, "Test3 passed");
 		
 		extentReports.flush();
 	}
